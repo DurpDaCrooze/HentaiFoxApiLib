@@ -3,7 +3,7 @@ import java.io.IOException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-public class app {
+public class nHentai {
     
     static String ip;
     static String token;
