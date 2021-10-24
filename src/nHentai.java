@@ -5,9 +5,10 @@ import org.jsoup.nodes.Document;
 
 public class nHentai {
     
-    static String ip;
-    static String token;
-    static String mastertoken;
+    private static String ip;
+    private static String token;
+
+    public void set(Pool pool){this.ip = pool.ip; this.token = pool.token;};
 
     public String name(int id){
         return attr(connect(id), "name");
@@ -23,7 +24,7 @@ public class nHentai {
 
     private String connect(int id){
         try{
-            Document doc = Jsoup.connect(ip + "/photo/" + id)
+            Document doc = Jsoup.connect(ip + "/bedmc/hentaifox/" + id)
             .ignoreContentType(true)
             .header("token", token)
             .get();
