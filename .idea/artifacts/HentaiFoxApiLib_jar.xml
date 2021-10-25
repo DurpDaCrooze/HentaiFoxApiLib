@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HentaiFoxApiLib:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HentaiFoxApiLib_jar</output-path>
+    <root id="archive" name="HentaiFoxApiLib.jar">
+      <element id="module-output" name="HentaiFoxApiLib" />
+      <element id="library" level="project" name="mysql-connector" />
+      <element id="library" level="project" name="jsoup-1.14.2" />
+    </root>
+  </artifact>
+</component>

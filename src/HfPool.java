@@ -1,4 +1,4 @@
-public class Pool {
+public class HfPool {
 
     public static String ip;
     public static String token;

@@ -8,7 +8,7 @@ public class nHentai {
     private static String ip;
     private static String token;
 
-    public void set(Pool pool){this.ip = pool.ip; this.token = pool.token;};
+    public void set(HfPool pool){this.ip = pool.ip; this.token = pool.token;};
 
     public String name(int id){
         return attr(connect(id), "name");
@@ -42,7 +42,7 @@ public class nHentai {
         while(data.charAt(temp) != '"'){
             temp++;
         }
-        
+
         int endtext = temp;
 
         return data.substring(starttext, endtext);
